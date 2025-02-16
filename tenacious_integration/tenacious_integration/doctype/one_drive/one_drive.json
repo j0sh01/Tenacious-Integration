@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-21 18:22:28.604343",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "section_break_vyvl",
+  "backup_folder_name",
+  "backup_folder_id",
+  "authorization_code",
+  "refresh_token",
+  "last_backup_on",
+  "frequency",
+  "section_break_gdem",
+  "file_backup",
+  "send_email_for_successful_backup",
+  "email"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "section_break_vyvl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "backup_folder_name",
+   "fieldtype": "Data",
+   "label": "Backup Folder Name",
+   "mandatory_depends_on": "eval:doc.enable"
+  },
+  {
+   "fieldname": "authorization_code",
+   "fieldtype": "Data",
+   "label": "Authorization Code"
+  },
+  {
+   "fieldname": "refresh_token",
+   "fieldtype": "Text",
+   "label": "Refresh Token"
+  },
+  {
+   "fieldname": "last_backup_on",
+   "fieldtype": "Datetime",
+   "label": "Last Backup On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "Daily\nWeekly"
+  },
+  {
+   "fieldname": "section_break_gdem",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "file_backup",
+   "fieldtype": "Check",
+   "label": "File Backup"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_email_for_successful_backup",
+   "fieldtype": "Check",
+   "label": "Send Email for Successful Backup"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Send Notification To",
+   "mandatory_depends_on": "eval:doc.enable",
+   "options": "Email"
+  },
+  {
+   "fieldname": "backup_folder_id",
+   "fieldtype": "Data",
+   "label": "Backup Folder ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-02-13 18:10:08.623659",
+ "modified_by": "Administrator",
+ "module": "Tenacious Integration",
+ "name": "One Drive",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

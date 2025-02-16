@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-21 18:14:05.105955",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "section_break_mxts",
+  "client_id",
+  "client_secret",
+  "section_break_ofxj",
+  "redirect_uri",
+  "authorization_code",
+  "refresh_token",
+  "column_break_hdqf",
+  "tenant_id",
+  "token_expiry",
+  "last_token_refresh_time",
+  "access_token"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "section_break_mxts",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "label": "Client ID",
+   "mandatory_depends_on": "eval:doc.enable"
+  },
+  {
+   "fieldname": "client_secret",
+   "fieldtype": "Password",
+   "label": "Client Secret",
+   "mandatory_depends_on": "eval:doc.enable"
+  },
+  {
+   "fieldname": "section_break_ofxj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "redirect_uri",
+   "fieldtype": "Data",
+   "label": "Redirect URI"
+  },
+  {
+   "fieldname": "authorization_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Authorization Code"
+  },
+  {
+   "fieldname": "refresh_token",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Refresh Token"
+  },
+  {
+   "fieldname": "column_break_hdqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tenant_id",
+   "fieldtype": "Data",
+   "label": "Tenant ID"
+  },
+  {
+   "fieldname": "access_token",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Access Token"
+  },
+  {
+   "fieldname": "token_expiry",
+   "fieldtype": "Datetime",
+   "label": "Token Expiry"
+  },
+  {
+   "fieldname": "last_token_refresh_time",
+   "fieldtype": "Datetime",
+   "label": "Last Token Refresh Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-02-14 11:08:28.006128",
+ "modified_by": "Administrator",
+ "module": "Tenacious Integration",
+ "name": "Microsoft Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
