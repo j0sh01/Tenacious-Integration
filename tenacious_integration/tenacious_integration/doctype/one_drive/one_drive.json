@@ -38,12 +38,16 @@
   {
    "fieldname": "authorization_code",
    "fieldtype": "Data",
-   "label": "Authorization Code"
+   "hidden": 1,
+   "label": "Authorization Code",
+   "read_only": 1
   },
   {
    "fieldname": "refresh_token",
    "fieldtype": "Text",
-   "label": "Refresh Token"
+   "hidden": 1,
+   "label": "Refresh Token",
+   "read_only": 1
   },
   {
    "fieldname": "last_backup_on",
@@ -54,8 +58,10 @@
   {
    "fieldname": "frequency",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Frequency",
-   "options": "Daily\nWeekly"
+   "options": "Daily\nWeekly",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_gdem",
@@ -83,13 +89,15 @@
   {
    "fieldname": "backup_folder_id",
    "fieldtype": "Data",
-   "label": "Backup Folder ID"
+   "hidden": 1,
+   "label": "Backup Folder ID",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-02-13 18:10:08.623659",
+ "modified": "2025-02-18 14:16:47.832567",
  "modified_by": "Administrator",
  "module": "Tenacious Integration",
  "name": "One Drive",
