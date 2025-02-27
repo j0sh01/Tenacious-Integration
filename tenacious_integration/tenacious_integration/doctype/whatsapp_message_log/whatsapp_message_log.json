@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-18 14:53:04.082027",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "message_id",
+  "to_number",
+  "column_break_uqbh",
+  "message_type",
+  "message_content",
+  "section_break_kelc",
+  "status",
+  "sent_at",
+  "delivered_at",
+  "queued_at",
+  "column_break_hndp",
+  "read_at",
+  "error_message",
+  "section_break_lcah",
+  "api_response",
+  "template_name",
+  "media_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "message_id",
+   "fieldtype": "Data",
+   "label": "Message ID"
+  },
+  {
+   "fieldname": "to_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Number"
+  },
+  {
+   "fieldname": "message_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Message Type",
+   "options": "Text\nTemplate\nMedia"
+  },
+  {
+   "fieldname": "message_content",
+   "fieldtype": "Text",
+   "label": "Message Content"
+  },
+  {
+   "fieldname": "column_break_uqbh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kelc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Queued\nSent\nDelivered\nRead\nFailed"
+  },
+  {
+   "fieldname": "sent_at",
+   "fieldtype": "Datetime",
+   "label": "Sent At"
+  },
+  {
+   "fieldname": "delivered_at",
+   "fieldtype": "Datetime",
+   "label": "Delivered At"
+  },
+  {
+   "fieldname": "read_at",
+   "fieldtype": "Datetime",
+   "label": "Read At"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Text",
+   "label": "Error Message"
+  },
+  {
+   "fieldname": "column_break_hndp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "queued_at",
+   "fieldtype": "Datetime",
+   "label": "Queued At"
+  },
+  {
+   "fieldname": "section_break_lcah",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "api_response",
+   "fieldtype": "JSON",
+   "label": "API Response"
+  },
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "label": "Template Name"
+  },
+  {
+   "fieldname": "media_url",
+   "fieldtype": "Data",
+   "label": "Media URL"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-21 18:29:54.465963",
+ "modified_by": "Administrator",
+ "module": "Tenacious Integration",
+ "name": "WhatsApp Message Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

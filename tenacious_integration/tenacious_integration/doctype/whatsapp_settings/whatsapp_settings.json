@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-18 14:49:01.671510",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "section_break_deil",
+  "api_key",
+  "phone_number_id",
+  "column_break_hrqi",
+  "whatsapp_business_account_id",
+  "phone_number",
+  "webhook_url",
+  "section_break_ssvb",
+  "default_message_template"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_break_deil",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Access Token",
+   "mandatory_depends_on": "eval:doc.enabled==1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "webhook_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Webhook URL"
+  },
+  {
+   "fieldname": "default_message_template",
+   "fieldtype": "Text",
+   "label": "Default Message Template"
+  },
+  {
+   "fieldname": "column_break_hrqi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ssvb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "phone_number_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone Number ID",
+   "mandatory_depends_on": "eval:doc.enabled==1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_business_account_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "WhatsApp Business Account ID",
+   "mandatory_depends_on": "eval:doc.enabled==1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "mandatory_depends_on": "eval:doc.enabled==1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-02-18 15:41:03.336188",
+ "modified_by": "Administrator",
+ "module": "Tenacious Integration",
+ "name": "WhatsApp Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
