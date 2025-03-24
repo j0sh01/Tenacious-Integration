@@ -113,7 +113,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-21 18:29:54.465963",
+ "modified": "2025-03-11 12:33:54.597450",
  "modified_by": "Administrator",
  "module": "Tenacious Integration",
  "name": "WhatsApp Message Log",
@@ -134,5 +134,22 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Queued"
+  },
+  {
+   "color": "Red",
+   "title": "Failed"
+  },
+  {
+   "color": "Green",
+   "title": "Sent"
+  },
+  {
+   "color": "Yellow",
+   "title": "Delivered"
+  }
+ ]
 }

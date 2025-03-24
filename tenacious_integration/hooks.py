@@ -145,6 +145,14 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+    "*": {
+        "on_update": "tenacious_integration.tenacious_integration.whatsapp_webhook.send_whatsapp_on_workflow_transition"
+    }
+}
+
+
+
 # Scheduled Tasks
 # ---------------
 

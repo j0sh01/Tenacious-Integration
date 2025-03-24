@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-17 13:31:44.278818",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "account_sid",
+  "auth_token",
+  "column_break_jink",
+  "twilio_whatsapp_number",
+  "webhook_url",
+  "section_break_mqeb",
+  "enable_whatsapp_workflow_messages",
+  "sms_configuration_section",
+  "twilio_sms_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "account_sid",
+   "fieldtype": "Data",
+   "label": "Account SID"
+  },
+  {
+   "fieldname": "auth_token",
+   "fieldtype": "Password",
+   "label": "Auth Token"
+  },
+  {
+   "fieldname": "twilio_whatsapp_number",
+   "fieldtype": "Data",
+   "label": "Twilio WhatsApp Number"
+  },
+  {
+   "fieldname": "column_break_jink",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mqeb",
+   "fieldtype": "Section Break",
+   "label": "WhatsApp Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_whatsapp_workflow_messages",
+   "fieldtype": "Check",
+   "label": "Enable WhatsApp Workflow Messages"
+  },
+  {
+   "fieldname": "webhook_url",
+   "fieldtype": "Data",
+   "label": "Webhook URL"
+  },
+  {
+   "fieldname": "sms_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "SMS Configuration"
+  },
+  {
+   "fieldname": "twilio_sms_number",
+   "fieldtype": "Data",
+   "label": "Twilio SMS Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-03-18 09:59:02.969312",
+ "modified_by": "Administrator",
+ "module": "Tenacious Integration",
+ "name": "Twilio Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

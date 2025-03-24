@@ -14,7 +14,8 @@
   "phone_number",
   "webhook_url",
   "section_break_ssvb",
-  "default_message_template"
+  "default_message_template",
+  "enable_workflow_notifications"
  ],
  "fields": [
   {
@@ -75,12 +76,18 @@
    "fieldtype": "Data",
    "label": "Phone Number",
    "mandatory_depends_on": "eval:doc.enabled==1"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_workflow_notifications",
+   "fieldtype": "Check",
+   "label": "Enable Workflow Notifications"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-02-18 15:41:03.336188",
+ "modified": "2025-03-11 10:46:26.954658",
  "modified_by": "Administrator",
  "module": "Tenacious Integration",
  "name": "WhatsApp Settings",
